@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_kickstart/task.dart';
+import 'package:flutter_kickstart/components/task.dart';
 
 class Difficulty extends StatelessWidget {
   const Difficulty({

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_kickstart/task.dart';
+import 'package:flutter_kickstart/components/task.dart';
 
 class InitialScreen extends StatefulWidget {
   const InitialScreen({super.key});
@@ -25,41 +25,38 @@ class _InitialScreenState extends State<InitialScreen> {
           children: const [
             Task(
               title: 'Aprendendo Dart',
-              picture:
-                  'https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Dart-logo-icon.svg/2048px-Dart-logo-icon.svg.png',
+              picture: 'assets/images/dart_icon.png',
               difficulty: 3,
             ),
             Task(
               title: 'Aprendendo Flutter',
-              picture:
-                  'https://pbs.twimg.com/media/Eu7m692XIAEvxxP?format=png&name=large',
+              picture: 'assets/images/flutter_icon.png',
               difficulty: 3,
             ),
             Task(
               title:
                   'Aprendendo Mobile para poder desenvolver meus aplicativos',
-              picture:
-                  'https://static.vecteezy.com/system/resources/previews/007/873/184/non_2x/mobile-phone-icon-logo-illustration-suitable-for-web-design-logo-application-free-vector.jpg',
+              picture: 'assets/images/mobile_icon.png',
               difficulty: 5,
             ),
             Task(
               title: 'Aprendendo Android',
-              picture:
-                  'https://cdn.icon-icons.com/icons2/329/PNG/512/AndroidFileTransfer_35158.png',
+              picture: 'assets/images/android_icon.webp',
               difficulty: 4,
             ),
             Task(
-              title: 'Aprendendo ',
-              picture:
-                  'https://cdn-images-1.medium.com/max/1200/1*5-aoK8IBmXve5whBQM90GA.png',
-              difficulty: 1,
+              title: 'Aprendendo Kotlin',
+              picture: 'assets/images/kotlin_icon.png',
+              difficulty: 5,
             ),
             Task(
-              title: 'Aprendendo ',
-              picture:
-                  'https://cdn-images-1.medium.com/max/1200/1*5-aoK8IBmXve5whBQM90GA.png',
-              difficulty: 1,
+              title: 'Aprendendo Swift',
+              picture: 'assets/images/swift_icon.png',
+              difficulty: 5,
             ),
+            SizedBox(
+              height: 80,
+            )
           ],
         ),
       ),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_kickstart/difficulty.dart';
+import 'package:flutter_kickstart/components/difficulty.dart';
 
 class Task extends StatefulWidget {
   final String title;
@@ -30,7 +30,9 @@ class _TaskState extends State<Task> {
             Container(
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(4),
-                color: Theme.of(context).primaryColor,
+                color: nivel == widget.difficulty * 10
+                    ? Theme.of(context).primaryColorDark
+                    : Theme.of(context).primaryColor,
               ),
               height: 140,
             ),
@@ -54,8 +56,8 @@ class _TaskState extends State<Task> {
                         height: 100,
                         child: ClipRRect(
                             borderRadius: BorderRadius.circular(4),
-                            child: Image.network(widget.picture,
-                                fit: BoxFit.cover)),
+                            child:
+                                Image.asset(widget.picture, fit: BoxFit.cover)),
                       ),
                       Column(
                         mainAxisAlignment: MainAxisAlignment.center,
