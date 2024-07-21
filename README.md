@@ -50,6 +50,7 @@ Para executar o aplicativo Flutter Kickstart, siga os passos abaixo:
 
 ### Tela
 
-![PrintScreen](assets\images\app-print.jpeg)
+![app-print](https://github.com/user-attachments/assets/90bf259c-cd15-43e0-967d-0e8eb50da0bd)
+
 
 
